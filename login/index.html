@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Text-to-Image Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>AI Text-to-Image Generator</h1>
+        <p>Provide a description and optionally upload an image as a base to generate your image.</p>
+        
+        <form id="imageForm">
+            <textarea id="description" placeholder="Describe your image..." rows="4" required></textarea>
+            <input type="file" id="baseImage" accept="image/*">
+            <button type="submit">Generate Image</button>
+        </form>
+        
+        <div class="output">
+            <p id="loadingMessage" style="display: none;">Generating your image, please wait...</p>
+            <img id="resultImage" src="" alt="Generated Image" style="display: none;">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
